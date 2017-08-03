@@ -3,9 +3,9 @@ from selenium.common.exceptions import NoSuchElementException
 
 @given('the post {title} is on the blog')
 def step_title(context, title):
-	context.browser.get('http://www.culturacolaborativa.com')
-	pages = context.browser.find_elements_by_xpath('//div/a[@class="page-numbers"]');
-	lastPage = int(pages[len(pages)-1].text)
+	#context.browser.get('http://www.culturacolaborativa.com')
+	#pages = context.browser.find_elements_by_xpath('//div/a[@class="page-numbers"]');
+	#lastPage = int(pages[len(pages)-1].text)
 	#for i in range(1, lastPage+1):
 	#	context.browser.get('http://www.culturacolaborativa.com/page/' + str(i) + '/')
 	#	for post in context.browser.find_elements_by_xpath('//h2[@class="post-content__title"]/a'):
